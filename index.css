@@ -250,6 +250,7 @@ input[type=number] {
     background-color: #ECFDF5;
     margin: 45px 46px;
     text-align: center;
+    border-radius: 3px;
 }
 
 .message {
