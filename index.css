@@ -1,0 +1,261 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    font-family: "Smythe", system-ui;
+    background-color: #ececec;
+    height: 100vh;
+} 
+
+/* Layout */
+
+header {
+    background-image: url("/images/bg\ img.png");
+    background-size: cover;
+    height: 167px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+#items-container {
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.item-inner {
+    display: flex;
+    align-items: flex-start;
+    margin: 67px 46px 0 46px;
+    padding-bottom: 51px;
+    max-width: 100%;
+    border-bottom: 1px solid #D2D2D2;
+    color: #000000;
+}
+
+
+
+/* Checkout Section Layout*/
+
+#order-details-container {
+    text-align: center;
+    padding: 45px 46px 53px 46px;
+    background: #FFFFFF;
+}
+
+.added-item-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.added-item-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.added-item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.divider {
+    margin-top: 22px;
+    border-bottom: 2px solid #393333;
+}
+
+.total-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+
+/* Typography */
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    margin: 0;
+} 
+
+h1, h2 {
+    padding-left: 46px;
+}
+
+h1 {
+    padding-top: 56px;
+    padding-bottom: 16px;
+    font-size: 39px;
+    line-height: 24px;
+}
+
+h2 {
+    font-size: 22.5px;
+    padding-bottom: 57px;
+    line-height: 13.8px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #8B8B8B;
+    padding-bottom: 8px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+.added-item-title {
+    padding-bottom: 0px;
+}
+
+
+/* Images */
+
+.item-img {
+    max-width: 100%;
+    height: 89px;
+    margin-right: 31px;
+}
+
+.add-btn-img {
+    width: 50px;
+    cursor: pointer;
+}
+
+
+/* Controls */
+
+.add-btn {
+    background: none;
+    margin-left: auto;
+}
+
+.add-btn, .remove-btn, .complete-order-btn {
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.remove-btn {
+    margin: auto;
+    background: none;
+    color: #BBBBBB;
+    font-size: 12px;
+}
+
+.complete-order-btn {
+    background-color: #16DB99;
+    border-radius: 3px;
+    width: 100%;
+    padding: 18px 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 53px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Checkout Modal */
+
+.checkout-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 542px;
+    height:fit-content;
+    background-color: #FFFFFF;
+    box-shadow: 5.19px 5.19px 255.44px #00000050;
+    border-radius: 3.89px;
+}
+
+.checkout-modal-inner {
+    margin: 0 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 47px 0 55px 85px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-bottom: 47px;
+}
+
+input {
+    padding: 20px 0 20px 26px;
+    border-radius: 3.89px;
+    border: 1.3px solid #757575;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: #757575;
+    font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.pay-btn {
+    width: 100%;
+    background-color: #16DB99;
+    border: none;
+    border-radius: 3.89px;
+    padding: 14px 0;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32.1px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* Order Complete Message */
+
+.order-complete-message-container {
+    background-color: #FFFFFF;
+}
+
+.message-container {
+    background-color: #ECFDF5;
+    margin: 45px 46px;
+    text-align: center;
+}
+
+.message {
+    font-size: 32px;
+    color: #065F46;
+    padding: 51px 25px;
+    line-height: 35px;
+}
+

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy’s Diner</h1>
+            <h2>The best burgers and pizzas in town.</h2>
+        </header>
+
+        <div id="items-container"></div>
+
+        <div class="hidden" id="order-details-container">
+            <h3>Your order</h3>
+            <div class="added-item-container" id="added-item-container">
+            </div>
+            <div class="divider"></div>
+            <div class="total-price-container" id="total-price-container">
+            </div>
+            <button class="complete-order-btn" id="complete-order-btn">Complete order</button>
+        </div>
+
+        <div class="order-complete-message-container" id="order-complete-message-container">
+        </div>
+
+        <div class="hidden checkout-modal" id="checkout-modal">
+            <div class="checkout-modal-inner">
+                <h1 class="modal-title">Enter card details</h1>
+                <form id="payment-form">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="number" placeholder="Enter card number" required>
+                    <input type="number" placeholder="Enter CVV" required>
+                    <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
+
