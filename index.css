@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    max-width: 600px;
     font-family: "Smythe", system-ui;
     background-color: #ececec;
     height: 100vh;
