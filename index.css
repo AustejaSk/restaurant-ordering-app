@@ -13,6 +13,7 @@ body {
 header {
     background-image: url("/images/bg\ img.png");
     background-size: cover;
+    background-position: center;
     height: 167px;
     color: #FFFFFF;
     max-width: 100%;
@@ -26,11 +27,19 @@ header {
 .item-inner {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     margin: 67px 46px 0 46px;
     padding-bottom: 51px;
     max-width: 100%;
     border-bottom: 1px solid #D2D2D2;
     color: #000000;
+}
+
+.item-info-container {
+    flex-grow: 1;
+    width: 3%;
+    overflow:visible;
+    overflow-wrap: break-word;
 }
 
 
@@ -124,13 +133,16 @@ h5 {
 /* Images */
 
 .item-img {
-    max-width: 100%;
-    height: 89px;
+    width: auto;
+    height: auto;
+    max-height: 89px;
+    max-width: 30%;
     margin-right: 31px;
 }
 
 .add-btn-img {
     width: 50px;
+    flex-shrink: 0;
     cursor: pointer;
 }
 
@@ -140,6 +152,7 @@ h5 {
 .add-btn {
     background: none;
     margin-left: auto;
+    flex-shrink: 0;
 }
 
 .add-btn, .remove-btn, .complete-order-btn {
@@ -178,7 +191,7 @@ h5 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 542px;
+    width: 542px;
     height:fit-content;
     background-color: #FFFFFF;
     box-shadow: 5.19px 5.19px 255.44px #00000050;

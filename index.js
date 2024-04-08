@@ -61,21 +61,22 @@ function handleAddClick(itemId){
 
 
 function handleRemoveClick(itemId){
-    const itemContainers = document.querySelectorAll(".added-item-inner")
-    itemContainers.forEach(container => {
-        if(container.getAttribute("data-id") === itemId){
+    const itemContainer = document.querySelector(`.added-item-inner[data-id="${itemId}"`)
+
+        if(itemContainer){
             const selectedItem = menuArray.find(item => item.id.toString() === itemId)
-            totalPrice -= selectedItem.price
-            container.remove()
+            if(selectedItem) {
+                totalPrice -= selectedItem.price
+                itemContainer.remove()
         }
-    })
+
     renderTotalPrice()
 
     if(document.querySelectorAll(".added-item-inner").length === 0){
         orderDetailsContainer.classList.toggle("hidden")
+        }
     }
 }
-
 
 function renderTotalPrice(){
     document.getElementById("total-price-container").innerHTML = `
